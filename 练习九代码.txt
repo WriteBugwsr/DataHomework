@@ -1,0 +1,13 @@
+/*练习九
+* 定义一个天气温度列表,写出周三的温度   */
+object wsr_1 {
+  def main(args: Array[String]) {
+    var ls = List(38,37,35,37,35)  //var变量 ls名称 list数组
+    for(i <- Range(0,5)) {        //i属于0-5范围，左闭右开不取5
+      if (i==2){                             //if条件
+      println("tem of Wed："+ls(2))}
+      else{                 //否则执行else内语句
+        println("tem ："+ls(i))}
+    }
+  }
+}
